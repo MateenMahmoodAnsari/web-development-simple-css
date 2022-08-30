@@ -1,0 +1,52 @@
+.title {
+	text-align: center;
+	font-size: 300%;
+	color: crimson;
+}
+.dot {
+	color: black;
+}
+.word {
+	color: darkred;
+}
+.nav {
+	background-color: coral;
+	list-style-type: none;
+	text-align: center;
+}
+
+.nav li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 40px;
+	color: antiquewhite;
+}
+.relative {
+	position: relative;
+	width: 400px;
+	height: 265px;
+	border: 3px solid red;
+	border-radius: 15px;
+	background: black;
+	transition: width 3s, height 4s, transform 2s;
+}
+
+div:hover {
+	width: 300px;
+	height: 300px;
+	transform: rotate(360deg);
+}
+
+.absolute {
+	position: absolute;
+	top: 80px;
+	font-size: large;
+	width: 400px;
+	height: 10px;
+	color: wheat;
+	object-fit: contain;
+}
+.pic {
+	width: 400px;
+	opacity: 65%;
+}
