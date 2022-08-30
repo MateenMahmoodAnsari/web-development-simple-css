@@ -1,38 +1,49 @@
 .title {
 	text-align: center;
 	font-size: 300%;
-	color: crimson;
+	color: #dc143c;
+	text-shadow: 1px 1px 2px #000000, 0 0 25px #0000ff, 0 0 5px #00008b;
+}
+.end {
+	text-align: center;
+	color: #696969;
 }
 .dot {
-	color: black;
+	color: #000000;
 }
 .word {
-	color: darkred;
+	color: #8b0000;
 }
 .nav {
-	background-color: coral;
+	background-color: #ff7f50;
 	list-style-type: none;
 	text-align: center;
+	border-style: groove;
+	color: #000000;
 }
 
 .nav li {
 	display: inline-block;
 	font-size: 20px;
 	padding: 40px;
-	color: antiquewhite;
+	color: #faebd7;
 }
 .relative {
 	position: relative;
 	width: 400px;
 	height: 265px;
-	border: 3px solid red;
+	border: 3px solid #000000;
 	border-radius: 15px;
-	background: black;
+	background: #ff0000;
 	transition: width 3s, height 4s, transform 2s;
+	animation-name: example;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	float: left;
 }
 
-div:hover {
-	width: 300px;
+.relative:hover {
+	width: 400px;
 	height: 300px;
 	transform: rotate(360deg);
 }
@@ -43,10 +54,43 @@ div:hover {
 	font-size: large;
 	width: 400px;
 	height: 10px;
-	color: wheat;
-	object-fit: contain;
+	color: #000000;
+	object-fit: fill;
+	margin-left: 1%;
+	margin-right: 99%;
 }
-.pic {
-	width: 400px;
-	opacity: 65%;
+@keyframes example {
+	5% {
+		background-color: #ff0000;
+	}
+	15% {
+		background-color: #ffff00af;
+	}
+	30% {
+		background-color: #0000ff;
+	}
+	45% {
+		background-color: #008000;
+	}
+	55% {
+		background-color: #8a2be2;
+	}
+	70% {
+		background-color: #7fff00;
+	}
+	85% {
+		background-color: #ff4500;
+	}
+	100% {
+		background-color: #008000;
+	}
+}
+.foot {
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	text-align: center;
+	font-size: x-small;
+	color: #000000;
+	border-radius: 2%;
 }
